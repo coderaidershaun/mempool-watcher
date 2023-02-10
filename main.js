@@ -2,6 +2,14 @@ const ethers = require("ethers");
 const dotenv = require("dotenv");
 dotenv.config();
 
+// // HTTP Provider url if using localhost and running own full node
+// "http://localhost:8545"
+// // Otherwise use Alchemy, Infura, QuickNode etc
+
+// // WSS Provider url if using localhost and running own full node
+// "ws://localhost:8546"
+// // Otherwise use Alchemy, Infura, QuickNode etc
+
 // Http Provider
 const httpProviderUrl = process.env.PROVIDER_HTTP;
 const provider = new ethers.providers.JsonRpcProvider(httpProviderUrl);
